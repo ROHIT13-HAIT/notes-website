@@ -21,5 +21,5 @@ Designed with a Google Drive-style folder structure for easy navigation and scal
 
 ---
 
-## 📁 Folder Structure
+
 
