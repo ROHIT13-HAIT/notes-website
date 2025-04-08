@@ -1,0 +1,91 @@
+#### **HTML Forms**  
+Forms collect user input using various input elements.  
+
+**Form Elements**:  
+1. **Input**: Includes `text`, `password`, `radio`, `checkbox`, `email`, `file`, etc.  
+
+   <input type="text" placeholder="Enter Name">
+   <input type="password" placeholder="Enter Password">
+
+2. **Textarea**: A multi-line text box.  
+   <textarea rows="4" cols="50">Enter your comment here.</textarea>
+
+3. **Select**: Dropdown list.  
+   <select>
+       <option value="html">HTML</option>
+       <option value="css">CSS</option>
+   </select>
+
+4. **Fieldset**: Groups related fields together.  
+   <fieldset>
+       <legend>Personal Information</legend>
+       <input type="text" placeholder="Name">
+   </fieldset>
+
+---
+
+### 14. **Other Tags and Elements**  
+
+#### **Legend Tag**  
+Provides a caption for a `<fieldset>`.  
+
+<fieldset>
+    <legend>Contact Details</legend>
+    <input type="text" placeholder="Name">
+</fieldset>
+
+#### **Iframe Tag**  
+Embeds another webpage within the current page.  
+
+<iframe src="https://example.com" width="300" height="200"></iframe>
+
+---
+
+### **HTML5 Elements**  
+HTML5 introduced new structural and semantic elements.  
+
+#### **HTML Semantic Elements**  
+Provide meaningful structure to the content.  
+- `<header>`: Defines the page header.  
+- `<nav>`:   Navigation links.  
+- `<article>`: Independent content.  
+- `<section>`: Groups related content.  
+- `<footer>`: Footer of the page.  
+- `<aside>`: Sidebars or additional info.  
+
+**Example**:  
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+</nav>
+<section>
+    <h2>Main Content</h2>
+    <p>This is the main section.</p>
+</section>
+<footer>
+    <p>Contact us at info@example.com</p>
+</footer>
+
+#### **Audio and Video Tags**  
+Embed multimedia.  
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+<video controls width="300">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+#### **SVG Element**  
+Scalable Vector Graphics for shapes and drawings.  
+
+<svg width="200" height="200">
+    <circle cx="100" cy="100" r="50" fill="blue" />
+</svg>

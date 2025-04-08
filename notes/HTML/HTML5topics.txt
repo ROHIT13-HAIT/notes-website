@@ -1,0 +1,392 @@
+### 1. *Web Architecture*
+   Web architecture refers to the structure and organization of components that make up a web application. It typically includes:
+   - *Frontend (Client-Side):* HTML, CSS, JavaScript - manages user interactions and presentation.
+   - *Backend (Server-Side):* Handles logic, database interactions, and business processes.
+   - *Database:* Stores data and supports queries (e.g., MySQL, MongoDB).
+   - *Communication Protocols:* Facilitates data exchange between the client and server, primarily via HTTP/HTTPS.
+   - *Web Servers:* Manage requests and responses (e.g., Apache, Tomcat).
+
+   *Types of Web Architecture:*
+   - *Monolithic:* All components bundled together.
+   - *Microservices:* Application divided into smaller, independent services.
+   - *Serverless:* Uses third-party cloud services for hosting and execution.
+
+---
+
+### 2. *Introduction to WWW*
+   - *WWW (World Wide Web):* A vast information space where documents and other web resources are identified by URLs and interlinked via hyperlinks.
+   - *Key Components:*
+     - *Web Pages:* Contain multimedia content written in HTML.
+     - *Web Browser:* Software to access web pages (e.g., Chrome, Firefox).
+     - *Web Server:* Delivers requested resources to the client.
+
+   *History:*
+   - Invented by *Tim Berners-Lee* in 1989.
+   - Standardized by the World Wide Web Consortium (W3C).
+
+---
+
+### 3. *Client-Server Architecture*
+   - A model where tasks are divided between two main components:
+     - *Client:* The front end, typically a browser or application, that sends requests (e.g., GET, POST).
+     - *Server:* The backend that processes these requests, performs operations (like database queries), and sends back the response.
+
+   *Flow of Interaction:*
+   - *Client Request:* User inputs a URL in a browser.
+   - *Server Response:* The server processes the request and returns the content.
+
+   *Types of Servers:*
+   - *Web Servers:* Serve web content (e.g., Apache).
+   - *Application Servers:* Handle business logic (e.g., Node.js).
+
+---
+
+### 4. *HTTP Communication Overview*
+   - *HTTP (Hypertext Transfer Protocol):* A protocol that facilitates communication between a client and a server over the web.
+   - *Key Features:*
+     - Stateless: Each request is independent.
+     - Uses TCP (Transmission Control Protocol) for reliability.
+   - *HTTP Methods:*
+     - *GET:* Request data from the server.
+     - *POST:* Send data to the server.
+     - *PUT:* Update data.
+     - *DELETE:* Remove data.
+   - *HTTP Response Status Codes:*
+     - *2xx:* Success (e.g., 200 OK).
+     - *4xx:* Client errors (e.g., 404 Not Found).
+     - *5xx:* Server errors (e.g., 500 Internal Server Error).
+
+   *Secure Version:* HTTPS encrypts communication using SSL/TLS.
+   
+----------   
+
+### 5. **Web Server Installation**  
+
+Web servers like WAMP, LAMP, and XAMPP are used for hosting websites locally on your computer.  
+- **WAMP**: Stands for Windows, Apache, MySQL, PHP. Used on Windows systems.  
+- **LAMP**: Stands for Linux, Apache, MySQL, PHP. Used on Linux systems.  
+- **XAMPP**: Stands for Cross-platform, Apache, MariaDB, PHP, Perl. Compatible with Windows, Linux, and macOS.  
+
+Steps for installation:  
+1. Download the desired software (e.g., XAMPP) from its official website.  
+2. Run the installer and follow the setup wizard.  
+3. Start the Apache and MySQL services from the control panel.  
+4. Place your project files in the **htdocs** (for XAMPP) or **www** (for WAMP) folder to serve them locally.  
+
+#### Developer Tools in Browser  
+Developer tools in browsers (accessible by pressing `F12` or `Ctrl+Shift+I`) allow developers to inspect and debug web pages.  
+- **Elements Tab**: Inspect and edit HTML and CSS.  
+- **Console Tab**: Debug JavaScript code.  
+- **Network Tab**: Monitor HTTP requests and responses.  
+- **Sources Tab**: Debug and manage JavaScript files.  
+
+---
+
+### 6. **Introduction to HTML: Structure vs Presentation**  
+HTML (HyperText Markup Language) is used to create the structure of web pages.  
+- **Structure**: The organization and arrangement of content using HTML tags like `<head>`, `<body>`, `<div>`.  
+- **Presentation**: The styling and appearance of content using CSS (e.g., colors, fonts, layouts).  
+
+Example:  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Structure vs Presentation</title>
+    <style>
+        body { font-family: Arial; color: blue; }
+    </style>
+</head>
+<body>
+    <h1>This is Structure</h1>
+    <p style="font-style: italic;">This is Presentation</p>
+</body>
+</html>
+
+---
+
+### 7. **HTML Structure: Head, Body, and HTML Version**  
+1. **HTML Version**: Declared using `<!DOCTYPE>` to specify the HTML version being used.  
+   Example: `<!DOCTYPE html>` indicates HTML5.  
+2. **Head**: Contains meta information, title, and links to styles/scripts.  
+3. **Body**: Contains visible content like headings, paragraphs, images, etc.
+
+Example:  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+    <p>This is the body section.</p>
+</body>
+</html>
+
+---
+
+### 8. **HTML Comments and Page Information**  
+- **Comments**: Add non-executable notes using `<!-- Comment -->`.  
+- **Page Information**: Includes the following tags:  
+  - `<title>`: Sets the title of the page.  
+  - `<meta>`: Provides metadata like charset, viewport, description.  
+  - `<link>`: Links external resources like stylesheets.  
+  - `<style>`: Embeds CSS styles.  
+  - `<script>`: Embeds or links JavaScript.
+
+Example:  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Comments and Meta</title>
+    <meta name="description" content="Learning HTML comments">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 { color: green; }
+    </style>
+</head>
+<body>
+    <!-- This is a comment -->
+    <h1>Hello, World!</h1>
+    <script>
+        console.log("Page Loaded");
+    </script>
+</body>
+</html>
+
+---
+
+### 9. **HTML Tags and Attributes**  
+- **Tags**: Define elements (e.g., `<h1>`, `<p>`, `<img>`).  
+- **Attributes**: Provide additional information to tags (e.g., `src`, `alt`, `href`).  
+
+**Example**: First Web Page - "Hello World"  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>This is my first web page.</p>
+</body>
+</html>
+
+---
+
+### 10. **Text Formatting Tags**  
+Used to format text in HTML.  
+- `<b>`: Bold  
+- `<strong>`: Important bold  
+- `<i>`: Italic  
+- `<em>`: Emphasized text  
+- `<u>`: Underline  
+- `<del>`: Deleted text  
+- `<ins>`: Inserted text  
+- `<sup>`: Superscript  
+- `<sub>`: Subscript  
+
+Example:  
+
+<p>This is <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.</p>
+<p>E=mc<sup>2</sup> is Einstein's formula.</p>
+
+---
+
+### **Block Elements**  
+Block elements occupy the full width of their parent container and start on a new line.  
+
+- **Header Tag (`<h1>` to `<h6>`)**: Define headings.  
+- **Paragraph Tag (`<p>`)**: Define text paragraphs.  
+- **Document Structure**:  
+  - `<div>`: Defines a block-level container.  
+  - `<span>`: Defines an inline container.
+
+Example:  
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Block Elements Example</h1>
+    <p>This is a paragraph inside a block element.</p>
+    <div>
+        <h2>Inside a Div</h2>
+        <p>Div can contain multiple elements.</p>
+    </div>
+    <p>This <span style="color: red;">text</span> has a red span.</p>
+</body>
+</html>
+-------------
+
+
+### 11. **Format Tags in HTML**  
+
+**Format tags** are used to style or modify the appearance of text and other elements.  
+
+| **Tag**  | **Purpose**                                                                 | **Example**                                                                                  |  
+|----------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|  
+| `<b>`    | Makes text **bold** without adding emphasis.                                | `<b>Bold Text</b>`                                                                           |  
+| `<strong>`| Indicates importance and makes text bold.                                   | `<strong>Important Text</strong>`                                                            |  
+| `<i>`    | Makes text *italicized*.                                                    | `<i>Italic Text</i>`                                                                         |  
+| `<em>`   | Adds emphasis to text (italicized by default).                              | `<em>Emphasized Text</em>`                                                                   |  
+| `<ins>`  | Represents **inserted text** (underlined).                                  | `<ins>Inserted Text</ins>`                                                                   |  
+| `<u>`    | Underlines text.                                                           | `<u>Underlined Text</u>`                                                                     |  
+| `<del>`  | Represents **deleted text** (strikethrough).                                | `<del>Deleted Text</del>`                                                                    |  
+| `<sub>`  | Displays text as a **subscript**.                                           | `H<sub>2</sub>O`                                                                             |  
+| `<sup>`  | Displays text as a **superscript**.                                         | `x<sup>2</sup>`                                                                              |  
+
+**Image Tag**: Displays an image.  
+<img src="image.jpg" alt="Sample Image" width="200" height="150">
+
+**Anchor Tag**: Adds hyperlinks.  
+
+<a href="https://example.com" target="_blank">Visit Example</a>
+
+---
+
+### 12. **HTML Lists**  
+
+HTML supports three types of lists:  
+1. **Ordered List (`<ol>`)**: Displays items with numbers or letters.  
+2. **Unordered List (`<ul>`)**: Displays items with bullets.  
+3. **Definition List (`<dl>`)**: Displays terms with their definitions.  
+
+**Example**:  
+
+<h3>Ordered List</h3>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+
+<h3>Unordered List</h3>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<h3>Definition List</h3>
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+
+---
+
+### 13. **Table Structure and HTML Forms**  
+
+#### **Table Structure**  
+HTML tables use `<table>`, `<tr>` (row), `<th>` (header), and `<td>` (data cell) tags.  
+
+**Example**:  
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>25</td>
+    </tr>
+</table>
+
+#### **HTML Forms**  
+Forms collect user input using various input elements.  
+
+**Form Elements**:  
+1. **Input**: Includes `text`, `password`, `radio`, `checkbox`, `email`, `file`, etc.  
+
+   <input type="text" placeholder="Enter Name">
+   <input type="password" placeholder="Enter Password">
+
+2. **Textarea**: A multi-line text box.  
+   <textarea rows="4" cols="50">Enter your comment here.</textarea>
+
+3. **Select**: Dropdown list.  
+   <select>
+       <option value="html">HTML</option>
+       <option value="css">CSS</option>
+   </select>
+
+4. **Fieldset**: Groups related fields together.  
+   <fieldset>
+       <legend>Personal Information</legend>
+       <input type="text" placeholder="Name">
+   </fieldset>
+
+---
+
+### 14. **Other Tags and Elements**  
+
+#### **Legend Tag**  
+Provides a caption for a `<fieldset>`.  
+
+<fieldset>
+    <legend>Contact Details</legend>
+    <input type="text" placeholder="Name">
+</fieldset>
+
+#### **Iframe Tag**  
+Embeds another webpage within the current page.  
+
+<iframe src="https://example.com" width="300" height="200"></iframe>
+
+---
+
+### **HTML5 Elements**  
+HTML5 introduced new structural and semantic elements.  
+
+#### **HTML Semantic Elements**  
+Provide meaningful structure to the content.  
+- `<header>`: Defines the page header.  
+- `<nav>`:   Navigation links.  
+- `<article>`: Independent content.  
+- `<section>`: Groups related content.  
+- `<footer>`: Footer of the page.  
+- `<aside>`: Sidebars or additional info.  
+
+**Example**:  
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+</nav>
+<section>
+    <h2>Main Content</h2>
+    <p>This is the main section.</p>
+</section>
+<footer>
+    <p>Contact us at info@example.com</p>
+</footer>
+
+#### **Audio and Video Tags**  
+Embed multimedia.  
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+<video controls width="300">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+#### **SVG Element**  
+Scalable Vector Graphics for shapes and drawings.  
+
+<svg width="200" height="200">
+    <circle cx="100" cy="100" r="50" fill="blue" />
+</svg>

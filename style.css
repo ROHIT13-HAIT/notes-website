@@ -1,0 +1,73 @@
+.sidebar {
+  width: 280px;
+  min-width: 250px;
+  overflow-y: auto;
+}
+
+.folder-title {
+  cursor: pointer;
+  font-weight: 500;
+  color: #007bff;
+  margin-bottom: 6px;
+}
+
+.note-list {
+  list-style: none;
+  padding-left: 1rem;
+  display: none;
+}
+
+.note-list li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.note-list li:hover {
+  text-decoration: underline;
+}
+
+.note-box {
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.note-list li.active {
+    font-weight: bold;
+    background-color: #e7f1ff;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+/* Dark Mode */
+[data-bs-theme="dark"] {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .note-list li.active {
+    background-color: #2a2f36;
+    color: #3eb314;
+}
+
+[data-bs-theme="dark"] .note-list li {
+    color: #ccc;
+}
+  
+[data-bs-theme="dark"] .note-list li:hover {
+    color: #66b2ff;
+}
+  
+[data-bs-theme="dark"] .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+  background-color: #222 !important;
+  color: #eee;
+}
+
+[data-bs-theme="dark"] .border {
+  border-color: #444 !important;
+}

@@ -1,0 +1,18 @@
+### **CSS for Responsive Design**
+
+Responsive design adjusts the layout based on screen size, improving user experience across devices.
+
+- **Media Queries**: Allows for different styles based on device characteristics.
+  ```css
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  ```
+
+- **Flexbox and Grid**: CSS layout modules that create flexible, responsive layouts.
+  - **Flexbox**: Ideal for one-dimensional layouts.
+  - **Grid**: Ideal for two-dimensional layouts.
+
+---

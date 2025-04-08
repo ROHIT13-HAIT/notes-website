@@ -1,0 +1,111 @@
+## **Lecture 2 JavaScript Data Types and Variables – **  
+
+In JavaScript, **data types** define the type of data a variable can hold. **Variables** store data values, making programs dynamic and interactive.  
+
+### **1. Variables in JavaScript**  
+A **variable** is like a container that stores a value. In JavaScript, you can declare variables using:  
+- `var` (old, avoid using)  
+- `let` (block-scoped, recommended for variables that can change)  
+- `const` (for values that don’t change)  
+
+**Syntax:**  
+
+let name = "Divya";  // String
+const age = 25;  // Number
+var isStudent = true;  // Boolean
+
+---
+
+## **2. Data Types in JavaScript**  
+
+JavaScript has **two** types of data types:  
+
+### **A. Primitive Data Types**  
+These hold only **single** values (immutable).  
+
+| Data Type   | Example Value    | Description |
+|-------------|----------------|-------------|
+| **String**  | `"Hello"`       | Text data   |
+| **Number**  | `10, 4.5`       | Integers & decimals  |
+| **Boolean** | `true, false`   | Yes/No, On/Off |
+| **Undefined** | `let x;`     | No value assigned  |
+| **Null**    | `let y = null;` | Empty or unknown value  |
+| **BigInt**  | `9007199254740991n` | Large numbers  |
+| **Symbol**  | `Symbol('id')` | Unique identifiers |
+
+**Example of Primitive Types:**
+
+let city = "New York"; // String
+let temperature = 30.5; // Number
+let isRainy = false; // Boolean
+let x; // Undefined
+let y = null; // Null
+let bigNumber = 9007199254740991n; // BigInt
+let id = Symbol("user1"); // Symbol
+
+### **Real-World Example – Primitive Data Types**  
+Imagine an **online ticket booking system**:  
+
+let passengerName = "Amit"; // String
+let ticketPrice = 599.99; // Number
+let isConfirmed = true; // Boolean
+let seatNumber; // Undefined (not yet assigned)
+let mealChoice = null; // Null (no meal selected)
+
+---
+
+### **B. Non-Primitive (Reference) Data Types**  
+These hold **collections of values** or references to memory locations.
+
+| Data Type  | Example Value |
+|------------|-------------|
+| **Array**  | `["apple", "banana", "cherry"]` |
+| **Object** | `{ name: "Alice", age: 25 }` |
+| **Function** | `function greet() { console.log("Hello!"); }` |
+
+#### **1. Arrays** (List of items)  
+Example: Storing multiple **product names** in an online store:  
+
+let products = ["Laptop", "Mobile", "Tablet"];
+console.log(products[0]); // Output: Laptop
+
+
+#### **2. Objects** (Key-value pairs)  
+Example: Storing **user details** for an e-commerce website:  
+
+let user = {
+    name: "Priya",
+    age: 28,
+    isMember: true
+};
+console.log(user.name); // Output: Priya
+
+#### **3. Functions** (Reusable code blocks)  
+Example: A **function to calculate** ticket prices based on age:  
+
+function calculatePrice(age) {
+    return age < 12 ? 200 : 500;
+}
+console.log(calculatePrice(10)); // Output: 200
+
+---
+
+## **Real-World Example – Non-Primitive Data Types**  
+### **Hotel Booking System**
+
+let guest = {
+    name: "Rahul",
+    age: 32,
+    roomType: "Deluxe",
+    amenities: ["WiFi", "Breakfast", "Pool"]
+};
+
+console.log(guest.name); // Output: Rahul
+console.log(guest.amenities[1]); // Output: Breakfast
+
+---
+
+## **Conclusion**
+- **Primitive Data Types** store single values (string, number, boolean, etc.).
+- **Non-Primitive Data Types** store collections or references (arrays, objects, functions).
+- JavaScript is **dynamic**—you don’t need to specify types explicitly.

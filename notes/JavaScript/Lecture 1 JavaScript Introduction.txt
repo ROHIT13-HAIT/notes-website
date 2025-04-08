@@ -1,0 +1,151 @@
+
+# **JavaScript Lecture 1: Introduction **
+
+## **1. What is JavaScript?**
+JavaScript is a **programming language** used to make websites interactive. It runs in web browsers and helps create **dynamic** web pages.  
+
+It can be used for:  
+- Adding **click events** (e.g., clicking a button to show a message)  
+- Animations (e.g., moving images, fading effects)  
+- Form validation (e.g., checking if an email is entered correctly)  
+- Fetching data from the internet (e.g., live cricket scores, weather updates)  
+
+**Real-world example**: Imagine you visit an **online shopping website** like Amazon. JavaScript helps when you click "Add to Cart," and the item appears in your cart **without refreshing the page**.
+
+---
+
+## **2. How to Write JavaScript?**
+JavaScript can be written **inside an HTML file** using the `<script>` tag.
+
+### **Example 1: Writing JavaScript inside HTML**
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example</title>
+</head>
+<body>
+
+    <h2>Welcome to JavaScript!</h2>
+    <button onclick="sayHello()">Click Me</button>
+
+    <script>
+        function sayHello() {
+            alert("Hello! Welcome to JavaScript.");
+        }
+    </script>
+
+</body>
+</html>
+
+** What happens here?**  
+When you **click the button**, a message box (alert) appears saying:  
+ `"Hello! Welcome to JavaScript."`
+
+**Real-world example**: Just like pressing the **horn in a car** makes a sound, clicking a button on a webpage can trigger an action using JavaScript.
+
+---
+
+## **3. JavaScript in a Separate File**
+You can also write JavaScript in a separate file (`script.js`) and link it to an HTML file.
+
+### **Example 2: External JavaScript File**
+#### **HTML file (`index.html`)**
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External JS Example</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h2>Click the button below:</h2>
+    <button onclick="greetUser()">Click Me</button>
+
+</body>
+</html>
+
+#### **JavaScript file (`script.js`)**
+
+function greetUser() {
+    alert("Hello, this is an external JavaScript file!");
+
+}
+
+
+** Why use external JavaScript?**  
+Keeps the code **clean and organized**  
+Allows multiple pages to **reuse the same JavaScript file**  
+
+ **Real-world example**: Think of an **electric switchboard**. The switch (HTML button) is in one place, but the wires (JavaScript logic) are in another location.
+
+---
+
+## **4. Variables in JavaScript**
+Variables are used to **store data**.
+
+### **Example 3: Declaring Variables**
+```javascript
+var name = "John";  // Stores a name
+var age = 25;       // Stores a number
+var isStudent = true;  // Stores a boolean (true/false)
+
+console.log(name); // Output: Devraj
+console.log(age); // Output: 25
+console.log(isStudent); // Output: true
+
+** Explanation:**  
+`"Devraj"` is a **string (text)**  
+`25` is a **number**  
+`true` is a **boolean (true/false value)**  
+
+**Real-world example**:  
+Think of **a school notebook**. You can **write** (store) a student's name, age, and whether they are present (true/false).
+
+---
+
+## **5. Basic Operations in JavaScript**
+JavaScript can **calculate values** just like a calculator.
+
+### **Example 4: Basic Math Operations**
+
+var a = 10;
+var b = 5;
+console.log(a + b);  // Output: 15  (Addition)
+console.log(a - b);  // Output: 5   (Subtraction)
+console.log(a * b);  // Output: 50  (Multiplication)
+console.log(a / b);  // Output: 2   (Division)
+
+**Real-world example**: A **bank system** calculates the balance when you deposit or withdraw money.
+
+---
+
+## **6. Interacting with Users**
+JavaScript can **ask users for input** using the `prompt()` function.
+
+### **Example 5: Asking for User Input**
+
+var userName = prompt("What is your name?");
+alert("Hello, " + userName + "! Welcome to JavaScript.");
+
+ **Real-world example**: Just like when you enter your name in an **online form**, JavaScript takes the input and processes it.
+
+---
+
+## **7. Conclusion**
+1] JavaScript makes web pages **interactive**.  
+2] It can be written **inside** HTML or in an **external file**.  
+3] It allows us to **store data** (variables) and **perform calculations**.  
+4] It can **interact with users** using alerts and prompts.
+
+---
+
+###  Homework for Students**
+
+**Write a script** that asks the user their age and shows a message:  
+- `"You are a teenager!"` if the age is between 13-19  
+- `"You are an adult!"` if the age is 20 or more  
+- `"You are a child!"` if the age is less than 13  
+
+ Hint: Use `prompt()`, `if-else` conditions, and `alert()`.
