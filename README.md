@@ -17,7 +17,7 @@ Designed with a Google Drive-style folder structure for easy navigation and scal
 
 ## 🖼️ UI Preview
 
-<img src="https://user-images.githubusercontent.com/your-screenshot-url" alt="Notes App Preview" width="800" />
+<!-- <img src="https://user-images.githubusercontent.com/your-screenshot-url" alt="Notes App Preview" width="800" /> -->
 
 ---
 
