@@ -6,7 +6,7 @@ const notesStructure = {
   },
   "CSS": {
     "Selectors": "notes/CSS/css.txt",
-    "Flexbox": "notes/css/flexbox.txt"
+    "Flexbox": "notes/CSS/flexbox.txt"
   },
   "JavaScript": {
     "Basics": "notes/JavaScript/Lecture 1 JavaScript Introduction.txt",
